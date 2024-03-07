@@ -43,8 +43,11 @@ Plug 'mbbill/undotree'
 Plug 'liuchengxu/vim-which-key'
 Plug 'voldikss/vim-floaterm'
 Plug 'SirVer/ultisnips'
+Plug 'vim-scripts/vim-auto-save'
 
 call plug#end()
+
+let g:auto_save = 1
 
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 let g:ycm_cache_omnifunc=0
